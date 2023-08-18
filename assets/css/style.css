@@ -1,0 +1,49 @@
+/* Seccion agregar borde */
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img .container-img {
+    position: relative;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+}
+
+.img .container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+}
+
+.hover-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);  
+    color: white;                          
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;                            
+    pointer-events: none;                  
+}
+
+.container-img:hover .hover-message {
+    display: block;
+}
+
+.bordered {
+    border-radius: 0.5rem;
+    border: solid 2px red ;
+}
