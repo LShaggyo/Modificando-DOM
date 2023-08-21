@@ -61,3 +61,5 @@ const inputs = document.querySelectorAll('.container-pic input');
 inputs.forEach(input => {
     input.addEventListener('input', negativeNumbers);
 });
+
+
