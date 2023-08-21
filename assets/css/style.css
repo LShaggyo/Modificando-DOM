@@ -23,6 +23,12 @@
     object-fit: contain;
     object-position: center;
     cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+}
+
+.img .container-img img:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.257);
 }
 
 .hover-message {
@@ -44,6 +50,111 @@
 }
 
 .bordered {
-    border-radius: 0.5rem;
     border: solid 2px red ;
+}
+
+
+/* Seccion Stickers */
+
+.container-stickers {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/akatsuki.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-stickers header {
+    display: flex;
+    justify-content: center;
+}
+
+.container-stickers h1 {
+    color: white;
+}
+
+.container-stickers main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-stickers main .container-pic {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 30%; 
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.container-stickers main img {
+    width: 100%; 
+    height: 80%; 
+    object-fit: contain;
+    object-position: center;
+}
+
+.container-stickers footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#calculateBtn {
+    background-color: black;
+    color: red;
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+#calculateBtn:hover {
+    background-color: grey;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.579);
+}
+
+#calculateBtn:active {
+    background-color: black;
+    color: white;
+}
+
+.message {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+#resetBtn {
+    background-color: black;
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+}
+
+#resetBtn:hover {
+    background-color: grey;
+}
+
+#resetBtn:active {
+    background-color: black;
+    color: red;
+}
+
+.hidden {
+    display: none;
 }

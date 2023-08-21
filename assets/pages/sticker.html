@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stickers</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="container-stickers">
+    <header>
+      <h1>Agregando Stickers</h1>
+    </header>
+    <main>
+      <div class="container-pic">
+        <img
+          src="../img/obito.png"
+          alt="obito vestido de akastsuki mirando el suelo"
+        /><input type="number" placeholder="0" min="0" />
+      </div>
+      <div class="container-pic">
+        <img
+          src="../img/pain.png"
+          alt="pain vestido de akatsuki con la mano derecha abierta"
+        />
+        <input type="number" placeholder="0" min="0" />
+      </div>
+
+      <div class="container-pic">
+        <img
+          src="../img/itachi.png"
+          alt="itachi vestido de akastuki con una daga en la mano izquierda a la altura del pecho"
+        />
+        <input type="number" placeholder="0" min="0" />
+      </div>
+    </main>
+    <footer>
+      <button id="calculateBtn">Calcular Stickers</button>
+      <div class="message">
+        <div id="totalMessage"></div>
+        <div id="errorMessage"></div>
+      </div>
+      <button id="resetBtn" class="hidden">Reiniciar</button>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
